@@ -2,32 +2,70 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
-    <!-- Favicon: emoji-based SVG, works in all modern browsers -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌽</text></svg>">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌽</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌽</text></svg>">
 
     <!-- Primary SEO -->
     <title>MalawiHarvest — Know your crop's worth before you sell</title>
-    <meta name="description" content="Real-time crop market prices for Malawian smallholder farmers. Compare maize, groundnut, soybean and more across all districts. Free harvest value calculator included." />
-    <meta name="keywords" content="Malawi crop prices, ADMARC prices, maize price Malawi, groundnut price, soybean price, smallholder farmers Malawi, chimanga mtengo" />
+    <meta name="description" content="Free crop market price tracker for Malawian smallholder farmers. Compare maize, groundnut, soybean, pigeon pea prices across 8 districts. Includes harvest value calculator and seasonal planting calendar." />
+    <meta name="keywords" content="Malawi crop prices, chimanga mtengo, maize price Malawi, groundnut price Malawi, soybean price Malawi, nandolo mtengo, ADMARC prices, ACE commodity prices, smallholder farmers Malawi, Blantyre market prices, Lilongwe market prices" />
     <meta name="author" content="MalawiHarvest" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://daud09.github.io/malawi-harvest/" />
 
-    <!-- Open Graph (WhatsApp, Facebook previews) -->
+    <!-- Open Graph (WhatsApp, Facebook) -->
     <meta property="og:type"        content="website" />
     <meta property="og:url"         content="https://daud09.github.io/malawi-harvest/" />
-    <meta property="og:title"       content="MalawiHarvest — Know your crop's worth" />
-    <meta property="og:description" content="Crop market prices for Malawi farmers. Compare prices across 8 districts, calculate your harvest value, and find the best time to sell." />
+    <meta property="og:title"       content="MalawiHarvest — Know your crop's worth before you sell" />
+    <meta property="og:description" content="Free crop market price tracker for Malawi farmers. Compare prices across 8 districts, calculate your harvest value, and find the best time to sell." />
     <meta property="og:image"       content="https://daud09.github.io/malawi-harvest/og-image.png" />
+    <meta property="og:locale"      content="en_MW" />
+    <meta property="og:site_name"   content="MalawiHarvest" />
 
-    <!-- Twitter card -->
+    <!-- Twitter -->
     <meta name="twitter:card"        content="summary_large_image" />
     <meta name="twitter:title"       content="MalawiHarvest — Know your crop's worth" />
-    <meta name="twitter:description" content="Crop market prices for Malawi farmers. Free harvest value calculator." />
+    <meta name="twitter:description" content="Free crop price tracker for Malawi farmers. 8 districts, 6 crops, harvest calculator." />
+    <meta name="twitter:image"       content="https://daud09.github.io/malawi-harvest/og-image.png" />
+
+    <!-- Structured Data (Google Rich Results) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "MalawiHarvest",
+      "url": "https://daud09.github.io/malawi-harvest/",
+      "description": "Crop market price tracker for Malawian smallholder farmers",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "creator": {
+        "@type": "Person",
+        "name": "Daudi Symon",
+        "url": "https://daud09.github.io/daudi-portfolio"
+      },
+      "keywords": "Malawi, crop prices, farmers, agriculture, maize, groundnut, soybean",
+      "inLanguage": ["en", "ny"],
+      "areaServed": {
+        "@type": "Country",
+        "name": "Malawi"
+      }
+    }
+    </script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   </head>
   <body>
