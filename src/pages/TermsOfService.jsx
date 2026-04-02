@@ -1,8 +1,6 @@
-import { useLang } from '../context/LanguageContext'
 import { useIsDesktop } from '../hooks/useIsDesktop'
 
 export default function TermsOfService() {
-  const { lang } = useLang()
   const isDesktop = useIsDesktop()
 
   return (
