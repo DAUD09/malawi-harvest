@@ -9,6 +9,9 @@ import Prices from './pages/Prices'
 import Calculator from './pages/Calculator'
 import Calendar from './pages/Calendar'
 import Report from './pages/Report'
+import TermsOfService from './pages/TermsOfService'
+import PrivacyPolicy  from './pages/PrivacyPolicy'
+import Footer from './components/Footer'
 import { useIsDesktop } from './hooks/useIsDesktop'
 
 function Layout() {
@@ -34,6 +37,8 @@ function Layout() {
             <Route path="/calculator" element={<Calculator />} />
             <Route path="/calendar"   element={<Calendar />} />
             <Route path="/report"     element={<Report />} />
+            <Route path="/terms"   element={<TermsOfService />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
           </Routes>
         </main>
 
@@ -41,8 +46,10 @@ function Layout() {
 
       {/* Bottom nav: only rendered on mobile */}
       {!isDesktop && <BottomNav />}
+      <Footer />
     </div>
   )
+ 
 }
 
 export default function App() {
